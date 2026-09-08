@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Was sich fügte – Haiku, Senryū und Haibun von Horst-Oliver Buchholz.">
+<title>Horst-Oliver Buchholz · Was sich fügte</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
+:root{--paper:#f7f5f0;--ink:#20201e;--muted:#77736b;--line:#d9d5cc;--white:#fffdfa}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-weight:300;line-height:1.75}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(247,245,240,.9);backdrop-filter:blur(10px);border-bottom:1px solid rgba(217,213,204,.7)}
+.navin{max-width:1100px;margin:auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
+.brand{font-family:"Cormorant Garamond",serif;font-size:24px}
+.links{display:flex;gap:26px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.hero{min-height:92vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;max-width:1200px;margin:auto;padding:100px 28px 60px;gap:60px}
+.hero-copy{padding-left:5vw}.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;line-height:1.05}
+h1{font-size:clamp(62px,8vw,118px);margin:22px 0 14px}
+.subtitle{font-family:"Cormorant Garamond",serif;font-size:25px;color:#57544e}
+.hero-image img{width:100%;max-height:680px;object-fit:cover;display:block;box-shadow:0 20px 60px rgba(0,0,0,.10)}
+section{max-width:980px;margin:auto;padding:110px 28px}
+.section-label{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:25px}
+h2{font-size:56px;margin:0 0 28px}
+.lead{font-family:"Cormorant Garamond",serif;font-size:27px;line-height:1.45;max-width:760px}
+.meta{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:45px;border:1px solid var(--line)}
+.meta div{background:var(--paper);padding:20px}.meta strong{display:block;font-family:"Cormorant Garamond";font-size:21px;font-weight:500}
+.poem{padding:80px 10px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:20px 0;font-family:"Cormorant Garamond",serif;font-size:32px;line-height:1.35;text-align:center}
+.poem + .poem{border-top:0;margin-top:0}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.gallery figure{margin:0;cursor:pointer;overflow:hidden;background:#ddd}
+.gallery figure:nth-child(1){grid-column:span 7}.gallery figure:nth-child(2){grid-column:span 5}
+.gallery figure:nth-child(3){grid-column:span 4}.gallery figure:nth-child(4){grid-column:span 4}.gallery figure:nth-child(5){grid-column:span 4}
+.gallery img{width:100%;height:360px;object-fit:cover;display:block;transition:transform .5s}
+.gallery figure:nth-child(1) img{height:500px}.gallery figure:hover img{transform:scale(1.025)}
+.caption{padding:11px 12px;font-size:11px;letter-spacing:.05em;color:var(--muted);background:var(--white)}
+.author{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.note{border-left:1px solid var(--line);padding-left:35px;color:#555}
+.cta{background:#222;color:#f7f5f0;max-width:none;padding:100px max(28px,calc((100vw - 924px)/2));text-align:center}
+.cta h2{font-size:62px}.cta p{max-width:580px;margin:0 auto 30px}
+.button{display:inline-block;border:1px solid #aaa;padding:12px 22px;letter-spacing:.12em;text-transform:uppercase;font-size:11px}
+footer{padding:35px 28px;text-align:center;font-size:11px;color:var(--muted);border-top:1px solid var(--line)}
+.lightbox{position:fixed;inset:0;background:rgba(15,15,14,.94);display:none;z-index:50;align-items:center;justify-content:center;padding:30px}
+.lightbox.open{display:flex}.lightbox img{max-width:94vw;max-height:90vh;object-fit:contain}
+.close{position:absolute;top:20px;right:28px;color:white;font-size:34px;font-weight:200;cursor:pointer}
+@media(max-width:760px){
+ .links{gap:12px;font-size:9px}.brand{font-size:20px}
+ .hero{grid-template-columns:1fr;gap:35px;padding-top:120px}.hero-copy{padding-left:0} h1{font-size:70px}
+ section{padding:75px 22px}h2{font-size:45px}.lead{font-size:24px}
+ .meta{grid-template-columns:1fr 1fr}.author{grid-template-columns:1fr;gap:30px}
+ .gallery{display:block}.gallery figure{margin-bottom:14px}.gallery img,.gallery figure:nth-child(1) img{height:360px}
+}
+</style>
+</head>
+<body>
+<nav><div class="navin"><a class="brand" href="#top">Horst-Oliver Buchholz</a>
+<div class="links"><a href="#buch">Das Buch</a><a href="#texte">Texte</a><a href="#galerie">Galerie</a><a href="#autor">Autor</a></div></div></nav>
+
+<header class="hero" id="top">
+<div class="hero-copy">
+<div class="eyebrow">Haiku · Senryū · Haibun</div>
+<h1>Was sich<br>fügte</h1>
+<div class="subtitle">Horst-Oliver Buchholz</div>
+</div>
+<div class="hero-image"><img src="cover.jpg" alt="Cover von Was sich fügte"></div>
+</header>
+
+<section id="buch">
+<div class="section-label">01 · Das Buch</div>
+<h2>Fragmente eines Zusammenhangs</h2>
+<p class="lead">Eine Sammlung kurzer poetischer Formen über Meer, Licht, Liebe, Abschied, Erinnerung, Reise und die Sehnsucht nach Ruhe und Stille.</p>
+<p>Der Titel erschließt sich über das Geleit des Autors: Das Fragment steht nicht für Unvollständigkeit, sondern für die Spur eines Zusammenhangs. Zwischen Naturbeobachtung und menschlicher Erfahrung öffnen die Texte kleine Räume des Innehaltens.</p>
+<div class="meta">
+<div><strong>166</strong>Seiten</div>
+<div><strong>2026</strong>Erscheinungsjahr</div>
+<div><strong>Paperback</strong>Format</div>
+<div><strong>ISBN</strong>978-3-6957-1581-7</div>
+</div>
+</section>
+
+<section id="texte">
+<div class="section-label">02 · Ausgewählte Texte</div>
+<h2>Worte, die nachwirken</h2>
+<div class="poem">beim Zwiebelhäuten<br>das Innere betrachten<br>tränenschwer</div>
+<div class="poem">erster Pinselstrich<br>mein Bild von ihr<br>endlos …</div>
+<div class="poem">aus einem Apfel<br>Fäule schneiden<br>du und ich</div>
+<div class="poem">Innehalten<br>mein Schatten aufgehoben<br>in dem der Linde</div>
+</section>
+
+<section id="galerie">
+<div class="section-label">03 · Galerie</div>
+<h2>Einblicke</h2>
+<p>Fotografische Eindrücke aus dem Buch und seiner Gestaltung.</p>
+<div class="gallery">
+<figure data-full="cover.jpg"><img src="cover.jpg" alt="Buchcover"></figure>
+<figure data-full="stapel.jpg"><img src="stapel.jpg" alt="Mehrere Exemplare des Buches"></figure>
+<figure data-full="gedicht1.jpg"><img src="gedicht1.jpg" alt="Innenseite mit Gedicht"></figure>
+<figure data-full="gedicht2.jpg"><img src="gedicht2.jpg" alt="Innenseite mit Gedicht"></figure>
+<figure data-full="gedicht3.jpg"><img src="gedicht3.jpg" alt="Innenseite mit Gedicht"></figure>
+</div>
+</section>
+
+<section id="autor">
+<div class="section-label">04 · Der Autor</div>
+<div class="author">
+<div><h2>Horst-Oliver<br>Buchholz</h2></div>
+<div class="note">
+<p>Horst-Oliver Buchholz zeichnet für Konzept, Layout und Gestaltung von <em>Was sich fügte</em> verantwortlich. Das Buch verzichtet – abgesehen vom Umschlag – auf weitere Bilder: Die Worte sollen für sich allein sprechen.</p>
+<p>Die vorliegende Seite kann hier künftig um eine ausführliche Biografie, weitere Veröffentlichungen, Lesungstermine oder Kontaktmöglichkeiten ergänzt werden.</p>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<h2>Was bleibt</h2>
+<p>Kurze Gedichte. Lange Nachwirkung. Räume zum Innehalten.</p>
+<a class="button" href="#galerie">Zur Galerie</a>
+</section>
+
+<footer>Horst-Oliver Buchholz · <em>Was sich fügte</em> · Haiku, Senryū und Haibun</footer>
+
+<div class="lightbox" id="lightbox"><span class="close" aria-label="Schließen">×</span><img id="lightboxImg" alt=""></div>
+<script>
+const lb=document.getElementById('lightbox'), lbi=document.getElementById('lightboxImg');
+document.querySelectorAll('.gallery figure').forEach(f=>f.addEventListener('click',()=>{lbi.src=f.dataset.full;lb.classList.add('open')}));
+document.querySelector('.close').onclick=()=>lb.classList.remove('open');
+lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('open')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
+</script>
+</body></html>
